@@ -22,4 +22,13 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+@app.get("/api/stats")
+async def get_stats():
+    courses = list(set(doc.get("course_name") for doc in vector_store.documents if "course_name" in doc))
+    return {
+        "total_documents": len(vector_store.documents),
+        "total_courses": len(courses),
+        "vector_store_ready": vector_store.ready
+    }
+
 app.include_router(router)

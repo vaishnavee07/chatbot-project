@@ -66,9 +66,14 @@ export default function ChatPage() {
           <p style={{ fontSize: 13, color: 'var(--color-text-muted)', margin: '0 0 8px 0' }}>
             Student Academic Project
           </p>
-          <Link to="/about" style={{ fontSize: 13, color: 'var(--color-primary, #3b82f6)', textDecoration: 'none' }}>
-            About This Project
-          </Link>
+          <div style={{ display: 'flex', gap: 12 }}>
+            <Link to="/about" style={{ fontSize: 13, color: 'var(--color-primary, #3b82f6)', textDecoration: 'none' }}>
+              About
+            </Link>
+            <Link to="/stats" style={{ fontSize: 13, color: 'var(--color-primary, #3b82f6)', textDecoration: 'none' }}>
+              Statistics
+            </Link>
+          </div>
         </div>
 
         <div style={{ flex: 1, overflowY: 'auto' }}>
