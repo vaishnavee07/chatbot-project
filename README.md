@@ -139,6 +139,23 @@ npm run dev
 
 Finally, open your browser to [http://localhost:5173](http://localhost:5173).
 
+## Docker Setup
+
+Build:
+```bash
+docker compose build
+```
+
+Run:
+```bash
+docker compose up
+```
+
+Stop:
+```bash
+docker compose down
+```
+
 ## Future Enhancements
 * **Ollama Integration:** Transitioning to local open-source LLMs.
 * **Llama 3 Support:** Upgrade the embedding and generation models.
