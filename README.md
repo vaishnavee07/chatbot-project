@@ -11,6 +11,11 @@ The AI Course Helpdesk Assistant is an offline, AI-powered educational RAG (Retr
 * **Structured Answers:** Responses are formatted into distinct sections (Explanation, Key Concepts, Examples, Related Topics) rather than dumping raw notes.
 * **Source Citations:** Accurately cites the source course material.
 * **WebSocket Communication:** Uses WebSockets for real-time streaming and typing indicators.
+* **Limited Conversation Memory:** Keeps track of multiple chat sessions and recent conversations.
+* **Chat Export:** Download your conversations as JSON for offline use.
+* **Recent Search History:** Instantly recall and re-use your recent search queries.
+* **Project Statistics Dashboard:** View real-time insights on total courses, documents, and vectorstore readiness.
+* **Vectorstore Validation:** Graceful error handling and validation during backend startup.
 * **FastAPI Backend:** Lightweight and scalable backend service.
 * **React Frontend:** Simple, clean, academic UI designed for a student project.
 
