@@ -13,11 +13,21 @@ class VectorStore:
         self._ready = False
 
     def load(self):
-        self.model = SentenceTransformer(MODEL_NAME)
-        self.index = faiss.read_index(str(VECTORSTORE_DIR / "courses.index"))
-        with open(VECTORSTORE_DIR / "docs.json", "r", encoding="utf-8") as f:
-            self.documents = json.load(f)
-        self._ready = True
+        try:
+            self.model = SentenceTransformer(MODEL_NAME)
+            index_path = VECTORSTORE_DIR / "courses.index"
+            docs_path = VECTORSTORE_DIR / "docs.json"
+            
+            if not index_path.exists() or not docs_path.exists():
+                print("Vectorstore files not found. Skipping vector store initialization.")
+                return
+
+            self.index = faiss.read_index(str(index_path))
+            with open(docs_path, "r", encoding="utf-8") as f:
+                self.documents = json.load(f)
+            self._ready = True
+        except Exception as e:
+            print(f"Failed to load vectorstore: {e}")
 
     @property
     def ready(self) -> bool:
