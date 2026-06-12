@@ -7,7 +7,7 @@ import { useChat } from '../context/ChatContext';
 import { useWebSocket } from '../hooks/useWebSocket';
 
 export default function ChatPage() {
-  const { clearChat, addMessage, sessions, currentSessionId, setCurrentSessionId, createNewSession, deleteSession } = useChat();
+  const { clearChat, addMessage, sessions, currentSessionId, setCurrentSessionId, createNewSession, deleteSession, recentSearches } = useChat();
   const { sendMessage } = useWebSocket();
 
   const handleSend = useCallback((text) => {
@@ -99,6 +99,35 @@ export default function ChatPage() {
               </li>
             ))}
           </ul>
+
+          {recentSearches && recentSearches.length > 0 && (
+            <div style={{ marginBottom: 24 }}>
+              <h2 style={{ fontSize: 12, fontWeight: 600, textTransform: 'uppercase', color: 'var(--color-text-secondary)', marginBottom: 12 }}>
+                Recent Searches
+              </h2>
+              <ul style={{ listStyleType: 'none', padding: 0, margin: 0 }}>
+                {recentSearches.map((search, i) => (
+                  <li key={i} style={{ marginBottom: 8, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                    <button
+                      onClick={() => handlePrompt(search)}
+                      style={{
+                        background: 'none',
+                        border: 'none',
+                        padding: 0,
+                        margin: 0,
+                        fontSize: 13,
+                        color: 'var(--color-primary, #3b82f6)',
+                        cursor: 'pointer',
+                        textAlign: 'left',
+                      }}
+                    >
+                      "{search}"
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
 
           <h2 style={{ fontSize: 12, fontWeight: 600, textTransform: 'uppercase', color: 'var(--color-text-secondary)', marginBottom: 12 }}>
             Available Courses

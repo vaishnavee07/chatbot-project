@@ -6,6 +6,7 @@ const ChatContext = createContext(null);
 export function ChatProvider({ children }) {
   const [sessions, setSessions] = useLocalStorage('acha_sessions', []);
   const [currentSessionId, setCurrentSessionId] = useLocalStorage('acha_current_session_id', null);
+  const [recentSearches, setRecentSearches] = useLocalStorage('acha_recent_searches', []);
   
   const [isTyping, setIsTyping] = useState(false);
   const [wsStatus, setWsStatus] = useState('disconnected');
@@ -38,6 +39,14 @@ export function ChatProvider({ children }) {
   const addMessage = useCallback((message) => {
     const msg = { id: Date.now() + Math.random(), timestamp: Date.now(), ...message };
     
+    if (message.role === 'user') {
+      setRecentSearches(prev => {
+        const text = message.text.trim();
+        if (!text) return prev;
+        return [text, ...prev.filter(t => t !== text)].slice(0, 5);
+      });
+    }
+
     setSessions(prev => prev.map(session => {
       if (session.id === currentSessionId) {
         let newTitle = session.title;
@@ -49,7 +58,7 @@ export function ChatProvider({ children }) {
       }
       return session;
     }));
-  }, [currentSessionId, setSessions]);
+  }, [currentSessionId, setSessions, setRecentSearches]);
 
   const clearChat = useCallback(() => {
     setSessions(prev => prev.map(session => {
@@ -74,6 +83,7 @@ export function ChatProvider({ children }) {
     <ChatContext.Provider value={{
       sessions,
       currentSessionId,
+      recentSearches,
       messages,
       isTyping,
       wsStatus,
