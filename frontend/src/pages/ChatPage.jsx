@@ -1,5 +1,5 @@
 import { useCallback } from 'react';
-import { Trash2, PlusCircle, MessageSquare } from 'lucide-react';
+import { Trash2, PlusCircle, MessageSquare, Download } from 'lucide-react';
 import ConnectionStatus from '../components/ConnectionStatus';
 import ChatWindow from '../components/ChatWindow';
 import InputBar from '../components/InputBar';
@@ -28,6 +28,18 @@ export default function ChatPage() {
   const handlePrompt = useCallback((text) => {
     handleSend(text);
   }, [handleSend]);
+
+  const exportChat = useCallback(() => {
+    const currentSession = sessions.find(s => s.id === currentSessionId);
+    const chatData = JSON.stringify(currentSession?.messages || [], null, 2);
+    const blob = new Blob([chatData], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `chat_export_${currentSessionId}.json`;
+    a.click();
+    URL.revokeObjectURL(url);
+  }, [sessions, currentSessionId]);
 
   return (
     <div style={{
@@ -102,21 +114,40 @@ export default function ChatPage() {
           </ul>
         </div>
 
-        <button
-          onClick={clearChat}
-          style={{
-            padding: '8px 12px',
-            border: '1px solid var(--color-border)',
-            borderRadius: 4,
-            fontSize: 13,
-            color: 'var(--color-text-primary)',
-            background: 'var(--color-bg)',
-            marginTop: 24,
-            cursor: 'pointer',
-          }}
-        >
-          Clear Current Chat
-        </button>
+        <div style={{ display: 'flex', gap: 8, marginTop: 24 }}>
+          <button
+            onClick={clearChat}
+            style={{
+              flex: 1,
+              padding: '8px 12px',
+              border: '1px solid var(--color-border)',
+              borderRadius: 4,
+              fontSize: 13,
+              color: 'var(--color-text-primary)',
+              background: 'var(--color-bg)',
+              cursor: 'pointer',
+            }}
+          >
+            Clear Current Chat
+          </button>
+          <button
+            onClick={exportChat}
+            style={{
+              padding: '8px 12px',
+              border: '1px solid var(--color-border)',
+              borderRadius: 4,
+              color: 'var(--color-text-primary)',
+              background: 'var(--color-bg)',
+              cursor: 'pointer',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+            }}
+            title="Export Chat as JSON"
+          >
+            <Download size={16} />
+          </button>
+        </div>
       </aside>
 
       {/* Main Chat Area */}
