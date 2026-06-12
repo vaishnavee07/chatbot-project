@@ -141,19 +141,54 @@ Finally, open your browser to [http://localhost:5173](http://localhost:5173).
 
 ## Docker Setup
 
-Build:
+### Prerequisites
+
+- Docker Desktop
+- WSL 2 (Windows)
+
+### Build Docker Images
+
 ```bash
 docker compose build
 ```
 
-Run:
+### Run the Application
+
 ```bash
 docker compose up
 ```
 
-Stop:
+### Run in Background
+
+```bash
+docker compose up -d
+```
+
+### Stop Containers
+
 ```bash
 docker compose down
+```
+
+### Check Running Containers
+
+```bash
+docker ps
+```
+
+### View Backend Logs
+
+```bash
+docker logs chatbot-project-backend-1
+```
+
+### Access Application
+
+Frontend:
+http://localhost:5173
+
+Backend API Docs:
+http://localhost:8000/docs
 ```
 
 ## Future Enhancements
