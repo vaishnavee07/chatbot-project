@@ -1,0 +1,18 @@
+Aptitude
+========
+
+Overview:
+Aptitude develops problem-solving skills essential for competitive exams and placements.
+
+Units:
+Unit 1 — Number Systems
+Unit 2 — Percentages, Profit/Loss
+Unit 3 — Algebra
+Unit 4 — Probability
+Unit 5 — Time & Work
+Unit 6 — Logical Reasoning
+
+Applications:
+- Placement tests
+- Bank exams
+- Competitive exams

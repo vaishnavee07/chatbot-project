@@ -1,0 +1,53 @@
+Advanced Java Programming
+=========================
+
+Overview:
+Advanced Java focuses on enterprise-level application development, server-side technologies, and multithreaded programming. Students learn how to build scalable, secure, and interactive software using Servlets, JSP, JDBC, and networking concepts.
+
+Units:
+Unit 1 — Advanced OOP
+- Inheritance, polymorphism, interfaces
+- Java Collections Framework
+- Generics and iterators
+- Exception handling (custom exceptions)
+
+Unit 2 — JDBC
+- JDBC Architecture
+- Types of drivers
+- Connecting to MySQL/Oracle
+- PreparedStatement vs Statement
+- CRUD operations
+- Transaction control
+
+Unit 3 — Servlets
+- Servlet lifecycle
+- GET & POST
+- Session Tracking
+- Cookies, URL Rewriting
+- RequestDispatcher
+
+Unit 4 — JSP
+- JSP lifecycle
+- Scriptlets, expressions
+- Expression Language (EL)
+- JSTL
+- MVC architecture
+
+Unit 5 — Threads & Networking
+- Thread lifecycle
+- Synchronization
+- Inter-thread communication
+- Socket programming (TCP/UDP)
+- RMI
+
+Applications:
+- E-commerce backend
+- Banking systems
+- Ticket booking systems
+- Enterprise applications
+
+Exam Topics:
+- JDBC flow
+- Servlet vs JSP
+- MVC
+- Thread states

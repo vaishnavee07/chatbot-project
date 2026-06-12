@@ -1,0 +1,42 @@
+Software Engineering
+====================
+
+Overview:
+Software Engineering deals with systematic development, design, testing, and maintenance of software systems. It emphasizes process models, design techniques, and quality assurance.
+
+Units:
+Unit 1 — Introduction
+- Software crisis
+- SDLC models: Waterfall, Spiral, Agile
+- Requirements engineering
+
+Unit 2 — System Design
+- ER diagrams
+- DFDs
+- Architectural styles
+- Cohesion & coupling
+
+Unit 3 — Implementation
+- Coding standards
+- Version control
+- Debugging and refactoring
+
+Unit 4 — Testing
+- Unit testing
+- Integration testing
+- System testing
+- Test case design
+
+Unit 5 — Maintenance & SCM
+- Types of maintenance
+- Software configuration management
+
+Applications:
+- IT companies
+- Product development
+- Large team projects
+
+Exam Topics:
+- SDLC models
+- DFD levels
+- Cohesion/Coupling

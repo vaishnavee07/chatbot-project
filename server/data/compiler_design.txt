@@ -1,0 +1,32 @@
+Computing Theory & Compiler Design
+==================================
+
+Overview:
+This course covers automata theory and compiler construction. Students learn how programming languages are parsed and translated into machine code.
+
+Units:
+Unit 1 — Automata Theory
+- DFA, NFA
+- Regular expressions
+
+Unit 2 — Context-Free Grammars
+- Derivations
+- Parse trees
+- Ambiguity
+
+Unit 3 — Lexical Analysis
+- Tokenization
+- Lexical errors
+- Symbol table
+
+Unit 4 — Syntax Analysis
+- Top-down parsing
+- Bottom-up parsing
+- LR parsers
+
+Unit 5 — Intermediate Code Generation
+- TAC
+- Syntax-directed translation
+
+Unit 6 — Optimization & Code Generation
+- Peephole optimization

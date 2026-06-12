@@ -1,0 +1,29 @@
+Financial Management
+====================
+
+Overview:
+Financial management focuses on planning, managing, and monitoring financial resources of a business.
+
+Units:
+Unit 1 — Introduction to Finance
+- Goals of FM
+- Time value of money
+
+Unit 2 — Capital Budgeting
+- NPV, IRR
+- Payback methods
+
+Unit 3 — Working Capital
+- Cash, inventory, receivables
+
+Unit 4 — Cost of Capital
+- Debt vs equity
+- WACC
+
+Unit 5 — Risk & Return
+- CAPM model
+
+Applications:
+- Banking
+- Investments
+- Corporate management

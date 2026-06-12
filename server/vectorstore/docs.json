@@ -1,0 +1,114 @@
+[
+  {
+    "filename": "advanced_java.txt",
+    "course_name": "Advanced Java",
+    "chunk_index": 0,
+    "chunk_total": 3,
+    "char_count": 597,
+    "text": "Advanced Java Programming\n=========================\n\nOverview:\nAdvanced Java focuses on enterprise-level application development, server-side technologies, and multithreaded programming. Students learn how to build scalable, secure, and interactive software using Servlets, JSP, JDBC, and networking concepts.\n\nUnits:\nUnit 1 — Advanced OOP\n- Inheritance, polymorphism, interfaces\n- Java Collections Framework\n- Generics and iterators\n- Exception handling (custom exceptions)\n\nUnit 2 — JDBC\n- JDBC Architecture\n- Types of drivers\n- Connecting to MySQL/Oracle\n- PreparedStatement vs Statement\n- CRUD"
+  },
+  {
+    "filename": "advanced_java.txt",
+    "course_name": "Advanced Java",
+    "chunk_index": 1,
+    "chunk_total": 3,
+    "char_count": 598,
+    "text": "andling (custom exceptions)\n\nUnit 2 — JDBC\n- JDBC Architecture\n- Types of drivers\n- Connecting to MySQL/Oracle\n- PreparedStatement vs Statement\n- CRUD operations\n- Transaction control\n\nUnit 3 — Servlets\n- Servlet lifecycle\n- GET & POST\n- Session Tracking\n- Cookies, URL Rewriting\n- RequestDispatcher\n\nUnit 4 — JSP\n- JSP lifecycle\n- Scriptlets, expressions\n- Expression Language (EL)\n- JSTL\n- MVC architecture\n\nUnit 5 — Threads & Networking\n- Thread lifecycle\n- Synchronization\n- Inter-thread communication\n- Socket programming (TCP/UDP)\n- RMI\n\nApplications:\n- E-commerce backend\n- Banking systems\n-"
+  },
+  {
+    "filename": "advanced_java.txt",
+    "course_name": "Advanced Java",
+    "chunk_index": 2,
+    "chunk_total": 3,
+    "char_count": 263,
+    "text": "lifecycle\n- Synchronization\n- Inter-thread communication\n- Socket programming (TCP/UDP)\n- RMI\n\nApplications:\n- E-commerce backend\n- Banking systems\n- Ticket booking systems\n- Enterprise applications\n\nExam Topics:\n- JDBC flow\n- Servlet vs JSP\n- MVC\n- Thread states"
+  },
+  {
+    "filename": "aiml_oracle.txt",
+    "course_name": "Aiml Oracle",
+    "chunk_index": 0,
+    "chunk_total": 2,
+    "char_count": 597,
+    "text": "Introduction to AIML (Oracle Academy)\n=====================================\n\nOverview:\nThis course introduces core AI and ML concepts with hands-on implementation using Oracle tools and Python. Students learn supervised and unsupervised learning, data preparation, and model evaluation.\n\nUnits:\nUnit 1 — AI Basics\n- History of AI\n- Search techniques\n- Heuristics\n\nUnit 2 — Data & Preprocessing\n- Data cleaning\n- Feature engineering\n\nUnit 3 — Supervised Learning\n- Classification\n- Regression\n- Decision trees\n\nUnit 4 — Unsupervised Learning\n- Clustering\n- Dimensionality reduction\n\nUnit 5 — Neural"
+  },
+  {
+    "filename": "aiml_oracle.txt",
+    "course_name": "Aiml Oracle",
+    "chunk_index": 1,
+    "chunk_total": 2,
+    "char_count": 351,
+    "text": "vised Learning\n- Classification\n- Regression\n- Decision trees\n\nUnit 4 — Unsupervised Learning\n- Clustering\n- Dimensionality reduction\n\nUnit 5 — Neural Networks\n- Perceptron model\n- Activation functions\n\nUnit 6 — Oracle Cloud AI Services\n- Oracle AutoML\n- Deployment\n\nApplications:\n- Recommendation systems\n- Fraud detection\n- Image & voice recognition"
+  },
+  {
+    "filename": "aptitude.txt",
+    "course_name": "Aptitude",
+    "chunk_index": 0,
+    "chunk_total": 1,
+    "char_count": 335,
+    "text": "Aptitude\n========\n\nOverview:\nAptitude develops problem-solving skills essential for competitive exams and placements.\n\nUnits:\nUnit 1 — Number Systems\nUnit 2 — Percentages, Profit/Loss\nUnit 3 — Algebra\nUnit 4 — Probability\nUnit 5 — Time & Work\nUnit 6 — Logical Reasoning\n\nApplications:\n- Placement tests\n- Bank exams\n- Competitive exams"
+  },
+  {
+    "filename": "compiler_design.txt",
+    "course_name": "Compiler Design",
+    "chunk_index": 0,
+    "chunk_total": 2,
+    "char_count": 599,
+    "text": "Computing Theory & Compiler Design\n==================================\n\nOverview:\nThis course covers automata theory and compiler construction. Students learn how programming languages are parsed and translated into machine code.\n\nUnits:\nUnit 1 — Automata Theory\n- DFA, NFA\n- Regular expressions\n\nUnit 2 — Context-Free Grammars\n- Derivations\n- Parse trees\n- Ambiguity\n\nUnit 3 — Lexical Analysis\n- Tokenization\n- Lexical errors\n- Symbol table\n\nUnit 4 — Syntax Analysis\n- Top-down parsing\n- Bottom-up parsing\n- LR parsers\n\nUnit 5 — Intermediate Code Generation\n- TAC\n- Syntax-directed translation\n\nUnit"
+  },
+  {
+    "filename": "compiler_design.txt",
+    "course_name": "Compiler Design",
+    "chunk_index": 1,
+    "chunk_total": 2,
+    "char_count": 209,
+    "text": "— Syntax Analysis\n- Top-down parsing\n- Bottom-up parsing\n- LR parsers\n\nUnit 5 — Intermediate Code Generation\n- TAC\n- Syntax-directed translation\n\nUnit 6 — Optimization & Code Generation\n- Peephole optimization"
+  },
+  {
+    "filename": "computer_networks.txt",
+    "course_name": "Computer Networks",
+    "chunk_index": 0,
+    "chunk_total": 2,
+    "char_count": 566,
+    "text": "Computer Networks\n=================\n\nOverview:\nStudy of data communication principles, network models, protocols, and routing algorithms.\n\nUnits:\nUnit 1 — Physical Layer\n- Transmission media\n- Modulation\n- Bandwidth\n\nUnit 2 — Data Link Layer\n- Error detection\n- Flow control\n- MAC protocols\n\nUnit 3 — Network Layer\n- IP addressing\n- Routing algorithms\n- Subnetting\n\nUnit 4 — Transport Layer\n- TCP vs UDP\n- Congestion control\n- Reliability\n\nUnit 5 — Application Layer\n- HTTP, FTP, DNS\n- Email protocols\n\nApplications:\n- Internet systems\n- Cloud networks\n- IoT devices"
+  },
+  {
+    "filename": "computer_networks.txt",
+    "course_name": "Computer Networks",
+    "chunk_index": 1,
+    "chunk_total": 2,
+    "char_count": 116,
+    "text": "pplication Layer\n- HTTP, FTP, DNS\n- Email protocols\n\nApplications:\n- Internet systems\n- Cloud networks\n- IoT devices"
+  },
+  {
+    "filename": "financial_management.txt",
+    "course_name": "Financial Management",
+    "chunk_index": 0,
+    "chunk_total": 2,
+    "char_count": 494,
+    "text": "Financial Management\n====================\n\nOverview:\nFinancial management focuses on planning, managing, and monitoring financial resources of a business.\n\nUnits:\nUnit 1 — Introduction to Finance\n- Goals of FM\n- Time value of money\n\nUnit 2 — Capital Budgeting\n- NPV, IRR\n- Payback methods\n\nUnit 3 — Working Capital\n- Cash, inventory, receivables\n\nUnit 4 — Cost of Capital\n- Debt vs equity\n- WACC\n\nUnit 5 — Risk & Return\n- CAPM model\n\nApplications:\n- Banking\n- Investments\n- Corporate management"
+  },
+  {
+    "filename": "financial_management.txt",
+    "course_name": "Financial Management",
+    "chunk_index": 1,
+    "chunk_total": 2,
+    "char_count": 44,
+    "text": "Banking\n- Investments\n- Corporate management"
+  },
+  {
+    "filename": "software_engineering.txt",
+    "course_name": "Software Engineering",
+    "chunk_index": 0,
+    "chunk_total": 2,
+    "char_count": 593,
+    "text": "Software Engineering\n====================\n\nOverview:\nSoftware Engineering deals with systematic development, design, testing, and maintenance of software systems. It emphasizes process models, design techniques, and quality assurance.\n\nUnits:\nUnit 1 — Introduction\n- Software crisis\n- SDLC models: Waterfall, Spiral, Agile\n- Requirements engineering\n\nUnit 2 — System Design\n- ER diagrams\n- DFDs\n- Architectural styles\n- Cohesion & coupling\n\nUnit 3 — Implementation\n- Coding standards\n- Version control\n- Debugging and refactoring\n\nUnit 4 — Testing\n- Unit testing\n- Integration testing\n- System"
+  },
+  {
+    "filename": "software_engineering.txt",
+    "course_name": "Software Engineering",
+    "chunk_index": 1,
+    "chunk_total": 2,
+    "char_count": 399,
+    "text": "it 3 — Implementation\n- Coding standards\n- Version control\n- Debugging and refactoring\n\nUnit 4 — Testing\n- Unit testing\n- Integration testing\n- System testing\n- Test case design\n\nUnit 5 — Maintenance & SCM\n- Types of maintenance\n- Software configuration management\n\nApplications:\n- IT companies\n- Product development\n- Large team projects\n\nExam Topics:\n- SDLC models\n- DFD levels\n- Cohesion/Coupling"
+  }
+]

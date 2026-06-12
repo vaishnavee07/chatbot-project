@@ -1,0 +1,37 @@
+Introduction to AIML (Oracle Academy)
+=====================================
+
+Overview:
+This course introduces core AI and ML concepts with hands-on implementation using Oracle tools and Python. Students learn supervised and unsupervised learning, data preparation, and model evaluation.
+
+Units:
+Unit 1 — AI Basics
+- History of AI
+- Search techniques
+- Heuristics
+
+Unit 2 — Data & Preprocessing
+- Data cleaning
+- Feature engineering
+
+Unit 3 — Supervised Learning
+- Classification
+- Regression
+- Decision trees
+
+Unit 4 — Unsupervised Learning
+- Clustering
+- Dimensionality reduction
+
+Unit 5 — Neural Networks
+- Perceptron model
+- Activation functions
+
+Unit 6 — Oracle Cloud AI Services
+- Oracle AutoML
+- Deployment
+
+Applications:
+- Recommendation systems
+- Fraud detection
+- Image & voice recognition

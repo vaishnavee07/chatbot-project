@@ -1,0 +1,35 @@
+Computer Networks
+=================
+
+Overview:
+Study of data communication principles, network models, protocols, and routing algorithms.
+
+Units:
+Unit 1 — Physical Layer
+- Transmission media
+- Modulation
+- Bandwidth
+
+Unit 2 — Data Link Layer
+- Error detection
+- Flow control
+- MAC protocols
+
+Unit 3 — Network Layer
+- IP addressing
+- Routing algorithms
+- Subnetting
+
+Unit 4 — Transport Layer
+- TCP vs UDP
+- Congestion control
+- Reliability
+
+Unit 5 — Application Layer
+- HTTP, FTP, DNS
+- Email protocols
+
+Applications:
+- Internet systems
+- Cloud networks
+- IoT devices
