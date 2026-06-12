@@ -143,4 +143,4 @@ Finally, open your browser to [http://localhost:5173](http://localhost:5173).
 * **Study Planner:** Calendar integration for learning objectives.
 
 ## Author
-**Vaishnavee M**
+Vaishnavee M

@@ -1,4 +1,5 @@
 import { useCallback } from 'react';
+import { Trash2, PlusCircle, MessageSquare } from 'lucide-react';
 import ConnectionStatus from '../components/ConnectionStatus';
 import ChatWindow from '../components/ChatWindow';
 import InputBar from '../components/InputBar';
@@ -6,7 +7,7 @@ import { useChat } from '../context/ChatContext';
 import { useWebSocket } from '../hooks/useWebSocket';
 
 export default function ChatPage() {
-  const { clearChat, addMessage } = useChat();
+  const { clearChat, addMessage, sessions, currentSessionId, setCurrentSessionId, createNewSession, deleteSession } = useChat();
   const { sendMessage } = useWebSocket();
 
   const handleSend = useCallback((text) => {
@@ -54,7 +55,39 @@ export default function ChatPage() {
           </p>
         </div>
 
-        <div style={{ flex: 1 }}>
+        <div style={{ flex: 1, overflowY: 'auto' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 12 }}>
+            <h2 style={{ fontSize: 12, fontWeight: 600, textTransform: 'uppercase', color: 'var(--color-text-secondary)', margin: 0 }}>
+              Recent Chats
+            </h2>
+            <button onClick={createNewSession} style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--color-text-secondary)', display: 'flex', alignItems: 'center' }} title="New Chat">
+              <PlusCircle size={16} />
+            </button>
+          </div>
+          <ul style={{ listStyleType: 'none', padding: 0, margin: '0 0 24px 0' }}>
+            {sessions.map(session => (
+              <li key={session.id} style={{
+                display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+                padding: '8px', marginBottom: 4, borderRadius: 4, cursor: 'pointer',
+                background: currentSessionId === session.id ? '#e5e7eb' : 'transparent',
+                color: currentSessionId === session.id ? '#111827' : 'var(--color-text-secondary)',
+              }} onClick={() => setCurrentSessionId(session.id)}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 8, overflow: 'hidden' }}>
+                  <MessageSquare size={14} />
+                  <span style={{ fontSize: 13, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                    {session.title || 'New Conversation'}
+                  </span>
+                </div>
+                <button 
+                  onClick={(e) => { e.stopPropagation(); deleteSession(session.id); }}
+                  style={{ background: 'none', border: 'none', cursor: 'pointer', color: '#9ca3af', display: 'flex', alignItems: 'center' }}
+                >
+                  <Trash2 size={14} />
+                </button>
+              </li>
+            ))}
+          </ul>
+
           <h2 style={{ fontSize: 12, fontWeight: 600, textTransform: 'uppercase', color: 'var(--color-text-secondary)', marginBottom: 12 }}>
             Available Courses
           </h2>
@@ -82,7 +115,7 @@ export default function ChatPage() {
             cursor: 'pointer',
           }}
         >
-          Clear Chat
+          Clear Current Chat
         </button>
       </aside>
 
