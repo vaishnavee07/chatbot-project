@@ -1,4 +1,5 @@
 import { useCallback } from 'react';
+import { Link } from 'react-router-dom';
 import { Trash2, PlusCircle, MessageSquare, Download } from 'lucide-react';
 import ConnectionStatus from '../components/ConnectionStatus';
 import ChatWindow from '../components/ChatWindow';
@@ -62,9 +63,12 @@ export default function ChatPage() {
           <h1 style={{ fontSize: 18, fontWeight: 700, margin: '0 0 4px 0', color: 'var(--color-text-primary)' }}>
             AI Course Helpdesk
           </h1>
-          <p style={{ fontSize: 13, color: 'var(--color-text-muted)', margin: 0 }}>
+          <p style={{ fontSize: 13, color: 'var(--color-text-muted)', margin: '0 0 8px 0' }}>
             Student Academic Project
           </p>
+          <Link to="/about" style={{ fontSize: 13, color: 'var(--color-primary, #3b82f6)', textDecoration: 'none' }}>
+            About This Project
+          </Link>
         </div>
 
         <div style={{ flex: 1, overflowY: 'auto' }}>
